@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a,max,b,i;
+    int coprime=0;
+
+    scanf("%d%d",&a,&b);
+    max=a;
+    if(b>a)
+       max=b;
+    for(i=2;i<max;i++)
+    {
+        if(b%i==0 && a%i==0)
+        {
+            coprime=1;
+            break;
+        }
+    }
+    if(coprime==1)
+        printf("number is composite");
+    else
+        printf("number is prime");
+
+}
